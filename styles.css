@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/004/968/002/original/cute-abstract-modern-background-free-vector.jpg");
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    background-color: white;
+    width: 90%;
+    padding: 5%;
+}
+
+.card-container {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 40vw;
+    height: 28vw;
+    overflow: auto;
+    margin: 0 auto;
+    background-color: white;
+}
+
+/* Left Side Starts */
+.card-left {
+    /* background-color: rgb(79, 79, 240); */
+    background-image: linear-gradient(rgb(108, 108, 245), rgb(28, 28, 228));
+    float: left;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+.card-left p {
+    font-size: medium;
+    color: lightgrey;
+}
+
+.card-score {
+    background-image: linear-gradient(180deg, rgb(28, 28, 228) 0, rgb(40, 40, 233) 50%,  rgb(65, 65, 226) 100%);
+    border-radius: 50%;
+    width: 10vw;
+    height: 10vw;
+    margin: 10% auto;
+    padding: 10%;
+}
+
+.card-score h1,
+.card-left h2 {
+    color: white;
+}
+
+.card-score h1 {
+    font-size: 50px;
+}
+
+.card-left-bottom {
+    margin-top: 5%;
+}
+
+/* Left side Ends */
+
+/* Right side Starts */
+.card-right {
+    width: 50%;
+    float: right;
+}
+
+
+.card-right h4 {
+    margin-bottom: 20px;
+}
+
+.summary-card h4 {
+    text-align: start;
+}
+
+.summary-card {
+    display: flex;
+    margin: 5% 0;
+    padding: 5%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.summary-card-left{
+    width: 50%;
+    display: flex;
+    gap: 8px;
+    font-weight: 500;
+    font-size: 250;
+}
+
+.summary-card-right {
+   position: relative;
+   left: 15%;
+   color: black;
+}
+
+.card-right button {
+    background-color: #1f3253;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    width: 100%;
+}
+
+.card-right button:hover{
+    background-image: linear-gradient(rgb(65, 65, 226) 0, rgb(40, 40, 233) 50%,  rgb(28, 28, 228) 100%);
+}
+
+.red {
+    background-color: rgba(207, 34, 34, 0.09);
+    color: red;
+}
+
+.yellow {
+    background-color: rgba(243, 243, 159, 0.311);
+    color: rgb(242, 179, 32);
+}
+
+.teal {
+    background-color: rgba(200, 240, 227, 0.618);
+    color:rgb(59, 163, 130);
+}
+
+.purple {
+    background-color: rgba(188, 184, 247, 0.563);
+    color: #1f3253;
+}
+
+/* Right side Ends */
+
+.card-left,
+.card-right {
+    padding: 5%;
+}
+
+.card-left,
+.card-container {
+    border-radius: 5%;
+}
