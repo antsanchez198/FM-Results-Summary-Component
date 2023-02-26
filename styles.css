@@ -23,23 +23,52 @@ section {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     width: 40vw;
     height: 28vw;
-    overflow: auto;
     margin: 0 auto;
     background-color: white;
+    display: flex;
 }
+
+@media (max-width: 70em) {
+
+    body, section {
+        height: auto;
+    }
+
+    .card-container {
+        flex-direction: column;
+        width: 30%;
+        height: auto;
+    }
+
+    .card-left {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-score > * {
+        text-overflow: ellipsis;
+    }
+
+    .card-right {
+        width: 100%;
+        /* float: right; */
+    }
+}
+
 
 /* Left Side Starts */
 .card-left {
     /* background-color: rgb(79, 79, 240); */
     background-image: linear-gradient(rgb(108, 108, 245), rgb(28, 28, 228));
-    float: left;
-    width: 50%;
+    /* float: left; */
+    /* width: 50%; */
+    flex-basis: 50%;
     height: 100%;
     text-align: center;
 }
 
 .card-left p {
-    font-size: medium;
+    font-size: 1rem;
     color: lightgrey;
 }
 
@@ -58,7 +87,7 @@ section {
 }
 
 .card-score h1 {
-    font-size: 50px;
+    font-size: 3vw;
 }
 
 .card-left-bottom {
@@ -69,8 +98,9 @@ section {
 
 /* Right side Starts */
 .card-right {
-    width: 50%;
-    float: right;
+    flex-basis: 50%;
+    /* width: 50%; */
+    /* float: right; */
 }
 
 
@@ -86,7 +116,7 @@ section {
     display: flex;
     margin: 5% 0;
     padding: 5%;
-    width: 100%;
+    max-width: 100%;
     border-radius: 10px;
 }
 
@@ -95,7 +125,7 @@ section {
     display: flex;
     gap: 8px;
     font-weight: 500;
-    font-size: 250;
+    /* font-size: 250; */
 }
 
 .summary-card-right {
