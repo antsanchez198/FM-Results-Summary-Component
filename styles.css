@@ -17,13 +17,16 @@ section {
     background-color: white;
     width: 90%;
     padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .card-container {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    width: 40vw;
-    height: 28vw;
-    margin: 0 auto;
+    width: 50%;
+    height: 90%;
+    /* margin: 0 auto; */
     background-color: white;
     display: flex;
 }
@@ -63,7 +66,7 @@ section {
     /* float: left; */
     /* width: 50%; */
     flex-basis: 50%;
-    height: 100%;
+    height: auto;
     text-align: center;
 }
 
