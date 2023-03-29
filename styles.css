@@ -14,7 +14,7 @@ body {
 }
 
 section {
-    background-color: white;
+    background-color: red;
     width: 90%;
     padding: 5%;
     display: flex;
